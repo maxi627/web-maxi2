@@ -1,0 +1,125 @@
+
+
+.datos_contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 500px;
+    height: 500px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+#form_datos{
+    background-color:#D80C10 ;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+#form_datos ul{
+    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 0;
+}
+#form_datos h2{
+    font-weight:bold ;
+    text-align: center;
+
+}
+
+
+
+
+
+/*Botones Redes Sociales*/
+
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 15px #00000027;
+    padding: 5px;
+    border-radius: 5em;
+    margin: 30px 60px;
+  }
+  
+  .social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #00000027;
+    transition: 0.3s;
+  }
+  
+  .social-button:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 6px 3px #00000027;
+  }
+  
+  .social-buttons svg {
+    transition: 0.3s;
+    height: 20px;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .facebook svg {
+    fill: #f2f2f2;
+  }
+  
+  .facebook:hover svg {
+    fill: #3b5998;
+  }
+  
+  .whatsapp {
+    background-color: #333;
+  }
+  
+  .whatsapp svg {
+    width: 25px;
+    height: 25px;
+    fill: #f2f2f2;
+  }
+  
+  .whatsapp:hover svg {
+    fill: #00ee14;
+  }
+  
+  .gmail {
+    background-color: #0077b5;
+  }
+  
+  .gmail svg {
+    fill: #f2f2f2;
+  }
+  
+  .gmail:hover svg {
+    fill: #0077b5;
+  }
+  
+  .instagram {
+    background-color: #c13584;
+  }
+  
+  .instagram svg {
+    fill: #f2f2f2;
+  }
+  
+  .instagram:hover svg {
+    fill: #c13584;
+  }
+  

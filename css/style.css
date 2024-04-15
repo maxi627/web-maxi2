@@ -1,0 +1,474 @@
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif; /*Le cambiamos la fuente al texto */
+    /*Las propiedades que pongamos en el body se aplican para todo el documento*/
+  }
+
+ header {
+    padding-top: 0rem; /* Ajusta este valor según sea necesario */
+}
+.barra_superior {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    background-color: black;
+    position: fixed; /* Importante: para que la sección 2 se posicione correctamente */
+    z-index: 1; /* Asegura que esta sección esté por encima de la otra */
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo con transparencia */
+}
+
+.logo1 {
+    margin-right: 1rem; /* Margen entre la imagen y el texto */
+    width: 10rem; /* Ajusta el ancho de la imagen según tu necesidad */
+    height: 10rem; /* Ajusta la altura de la imagen según tu necesidad */
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain; /* Ajusta el tamaño de la imagen para que se ajuste al contenedor */
+}
+
+.nombre_empresa {
+    font-size: 2.4rem; /* Ajusta el tamaño del texto según tu necesidad */
+}
+
+.nombre_empresa span {
+    font-size: 1.6rem; /* Ajusta el tamaño del texto del span según tu necesidad */
+}
+
+
+
+nav {
+
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  nav a {
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    text-align: center;
+    padding: 1.4rem 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+  }
+  
+  nav a:hover {
+    color: red;
+  }
+
+  
+  .active {
+    color: red;
+  }
+  
+  section {
+    height: 50rem; /* Simulación de contenido */
+    padding-top: 5rem; /* Espacio para la barra de navegación */
+  }
+  
+  .fondo {
+    position: relative; /* Para que los elementos hijos se posicionen relativos a este */
+    background-image: url(/image/soldando2.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70rem;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  
+  .texto-superior {
+    position: absolute; /* Para que el texto se posicione sobre la imagen de fondo */
+    top: 85%; /* Ajusta la posición vertical */
+    left: 50%; /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+    color: white; /* Color del texto */
+    font-size: 5.6rem; /* Tamaño del texto */
+    text-align:center; /* Alineación del texto */
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+  }
+  
+#frase_portafolio{
+  height: 10rem;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+/* Define la animación */
+@keyframes moverTexto {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(100px); /* Mueve el texto 100px hacia la derecha */
+  }
+  60% {
+      transform: translateX(100px); /* Se detiene por 10% de la animación */
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+/* Aplica la animación al texto */
+.texto-con-movimiento {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  animation: moverTexto 10s ease-in-out infinite; /* La animación dura 4 segundos y se repite infinitamente */
+  font-size: 3.8rem;
+}
+
+/*Section contacts*/
+
+.datos_contacto{
+  position: absolute;
+  top: 170rem;
+  width: 120rem;
+  height: 50rem;
+  margin: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.card {
+width: 500px;
+height: 500px;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#map{
+  background-image: url(/image/mapa.png);
+}
+
+#form_datos{
+background-color:#D80C10 ;
+color: white;
+font-size: 30px;
+margin: 0;
+}
+
+#form_datos ul{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+margin: 0;
+}
+#form_datos h2{
+font-weight:bold ;
+text-align: center;
+
+}
+
+
+
+
+/*Botones Redes Sociales*/
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 5px;
+  border-radius: 5em;
+  margin: 3rem 6rem;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 2rem;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.whatsapp {
+  background-color: #333;
+}
+
+.whatsapp svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.whatsapp:hover svg {
+  fill: #00ee14;
+}
+
+.gmail {
+  background-color: #0077b5;
+}
+
+.gmail svg {
+  fill: #f2f2f2;
+}
+
+.gmail:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
+
+
+
+/*End Section Contacts*/
+
+
+
+
+/*Slider effects....*/
+
+ul li {
+    list-style: none;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #FFF;
+    float: left;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+}
+ul li:nth-child(1) {
+    background: url(../image/imagen1.jpg);
+    background-size: cover;
+    background-position: left top;
+}
+ul li:nth-child(2) {
+    background: url(../image/imagen2.jpg);
+    background-size: cover;
+    background-position: left center;
+}
+ul li:nth-child(3) {
+    background: url(../image/imagen3.jpg);
+    background-size: cover;
+    background-position: left center;
+}
+ul li:nth-child(4) {
+    background: url(../image/imagen4.jpg);
+    background-size: cover;
+    background-position: left top;
+}
+ul li:nth-child(5){
+    background: url(../image/imagen5.jpg);
+    background-size: cover;
+    background-position: left center;
+}
+ul:hover li {
+    width: 10%;
+}
+ul li:hover {
+    width: 60%;
+}
+ul li .content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.4);
+    box-sizing: border-box;
+    color: #FFF;
+    opacity: 1;
+}
+ul li .content h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+ul li .content p {
+    width: 70%;
+    margin: auto;
+    margin-top: 0;
+}
+ul li:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+#seccion1{ 
+  position: absolute;
+    margin-top: auto;
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.sobrenosotros{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.sobrenosotros p{
+        width: auto;
+        height: auto;
+        font-weight: 600;
+        -webkit-box-shadow: 1px 2px 13px 3px rgba(0,0,0,0.49);
+        -moz-box-shadow: 1px 2px 13px 3px rgba(0,0,0,0.49);
+        box-shadow: 1px 2px 13px 3px rgba(0,0,0,0.49);
+        padding: 1rem; 
+        border-radius:1rem; /*Redondeamos las esquinas*/
+        margin: 3rem auto;
+        width: 90%;
+}
+
+.sobrenosotros p span{
+    font-weight: bold;
+    color: grey ;
+}
+
+
+
+.btn {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8rem 1.75rem;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }    
+
+
+
+
+footer {
+  position: absolute;
+  top: 255rem;
+  width: 100%;
+  background-color: black;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 1.5rem;
+  opacity: 0.6;
+  text-align: center;
+}
+
+body {
+  margin-bottom: 4rem; /* Ajusta el margen inferior del cuerpo para dejar espacio para el footer */
+}
+
+footer div {
+  text-align: end;
+}
+
+footer div span {
+  font-weight: 700;
+}
