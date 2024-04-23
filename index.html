@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="/css/normalize.css" as="style">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     
-    <title>Document</title>
+    <title>LaMoro</title>
 </head>
 <body>
     <header id="inicio">
-        <section class="barra_superior">
+        <section class="barra_superior"  >
 
             <div class="logo1">
             </div>
@@ -28,7 +28,7 @@
                 <a href="#inicio" class="active">Inicio</a>
                 <a href="#portafolio">Portafolio</a>
                 <a href="#seccion1">Sobre Nosotros</a>
-                <a href="#seccion3"> Contactanos</a>
+                <a href="#seccion3"> Social Networks</a>
             </nav>
         </section>
 
@@ -37,60 +37,57 @@
                 Fundiendo Pasión En Cada Pieza
             </div>
         </section>
-          
-        <script src="scripts.js"></script>
+    </header>  
         <section id="portafolio">
             <div id="frase_portafolio">
                 <h2 class="texto-con-movimiento">Encuentra inspiración en nuestra cartera de proyectos</h2>
             </div>
-            <ul style="position: absolute;
-            margin-top: 10rem;
-            left: 0;
-            width: 100%;
-            height: 80vh;
-            background-color: #ccc;
-            margin: 0;
-            padding: 0;">
+            <ul class="proyectos-lista" >
                 <li>
                     <div class="content">
-                        <span>Galpón parabólico 16m x 20m x 5m de luz.</span>
-                        <h2>Kither Simha –PIN</h2>
+                        <span>Galpón parabólico...</span>
+                        <h2>Kither Simha _ PIN</h2>
                         <p>Juan Blas Iruretagoyena cel.: 299-4683099</p>
                     </div>
                 </li>
                 <li>
                     <div class="content">
-                        <span>Módulos Habitacionales</span>
-                        <h2>Kiter Simha –PIN</h2>
+                        <span>Módulos Habitacionales...</span>
+                        <h2>Kiter Simha _ PIN</h2>
                         <p>Irureta Juan Blascel.:299-4683099</p>
                     </div>
                 </li>
                 <li>
                     <div class="content">
-                        <span>Mantenimiento de soldadura a equipos de perforación</span>
-                        <h2>R.C Servicios y Montajes – PIN</h2>
+                        <span>Mantenimiento de soldadura a equipos...</span>
+                        <h2>R.C Servicios y Montajes _ PIN</h2>
                         <p>Fernández Oro Elvio Solís cel.: sin datos actualizados</p>
                        
                     </div>
                 </li>
                 <li>
                     <div class="content">
-                        <span>Estructura metálica para medición de muertos de hormigón en equipos de perforacion.</span>
-                        <h2>ABK3 Servicios Petroleros –PIN</h2>
-                        <p>Ingeniero: Raúl Arévalo cel.: sin datos actualizados</p>
+                        <span >Estr. para medición de muertos de hormigón...</span>
+                        <h2>ABK3 Servicios Petroleros _ PIN</h2>
+                        <p>Ing. Raúl Arévalo cel.: sin datos actualizados</p>
                         
                     </div>
                 </li>
                 <li>
                     <div class="content">
-                        <span> Mantenimiento de maquinas viales</span>
-                        <h2> ServiPet – Centenario – Nqn –PIN</h2>
+                        <span> Mantenimiento de maquinas viales...</span>
+                        <h2> ServiPet - PIN</h2>
                         <p>Luis Ríoscel  cel.: Sin datos actualizados</p>
                         
                     </div>
                 </li>
             </ul>
         </section>
+        <div class="bt_port">
+
+                <a href="/pag/portafolio.html" class="btn" id="boton_port">Ver más...</a>  
++ 
+        </div>
           
         <section id="seccion1">
             <section>
@@ -107,7 +104,9 @@
                     equipos de perforación. También nos destacamos en la fabricación de módulos habitacionales, 
                     entre otros servicios.
                     </p>
-                    <button href="#contactanos" class="btn">Contactanos</button>  
+                    <a href="/pag/formulario.html">
+                    <button href="/pag/formulario.html" class="btn">Contáctanos</button>  
+                </a>
                 </div>
 
                 <div>
@@ -123,14 +122,14 @@
         <section id="seccion3" class="datos_contacto">
 
             <div class="card" id="form_datos">
-                <h2>Nuestros Datos</h2>
+                <h2 id="texto-bounce">Te Asesoramos...</h2>
                 <ul style="position: relative;
                 display: flex;
                 flex-direction: column;
                 align-items:flex-start;
                 margin: 0;">
                     <p>
-                        <span><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                        <span><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
     
                             <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                             
@@ -139,7 +138,7 @@
                             <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ebe5e5"/> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ebe5e5"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#ebe5e5"/> </g>
                             
                             </svg></span>
-                        @la_moro    
+                        @la_moro_servicios    
                     </p>
                     <p>
                         <span ><svg fill="white" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -188,7 +187,7 @@
                             </g>
                             
                             </svg></span>
-                        example@gmail.com
+                        lamoroservicios@gmail.com
                     </p>
                     <p>
                         <span><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" z-index: -1;>
@@ -200,11 +199,11 @@
                 </ul>
                 
                 <div class="social-buttons">
-                    <a href="#" class="social-button whatsapp">
+                    <a href="https://wa.me/2995367683" class="social-button whatsapp">
                             <svg fill="#000000" width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>
         
                     </a>
-                        <a href="#" class="social-button gmail">
+                        <a href="mailto:lamoroservicios@gmail.com" class="social-button gmail">
                                 <svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 11.9556C2 8.47078 2 6.7284 2.67818 5.39739C3.27473 4.22661 4.22661 3.27473 5.39739 2.67818C6.7284 2 8.47078 2 11.9556 2H20.0444C23.5292 2 25.2716 2 26.6026 2.67818C27.7734 3.27473 28.7253 4.22661 29.3218 5.39739C30 6.7284 30 8.47078 30 11.9556V20.0444C30 23.5292 30 25.2716 29.3218 26.6026C28.7253 27.7734 27.7734 28.7253 26.6026 29.3218C25.2716 30 23.5292 30 20.0444 30H11.9556C8.47078 30 6.7284 30 5.39739 29.3218C4.22661 28.7253 3.27473 27.7734 2.67818 26.6026C2 25.2716 2 23.5292 2 20.0444V11.9556Z" fill="white"/>
                                     <path d="M22.0515 8.52295L16.0644 13.1954L9.94043 8.52295V8.52421L9.94783 8.53053V15.0732L15.9954 19.8466L22.0515 15.2575V8.52295Z" fill="#EA4335"/>
@@ -216,8 +215,8 @@
                                     <path d="M5 11.4668V22.6591C5.07646 23.8904 6.15673 24.0003 6.15673 24.0003H9.94877L9.94014 15.0671L5 11.4668Z" fill="#4285F4"/>
                                     </svg>
                     </a>
-                    <a href="#" class="social-button facebook">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
+                    <a href="https://www.facebook.com/MaxiCano88?mibextid=ZbWKwL" class="social-button facebook">
+                        <svg version="1.1" id="Layer_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve">
                     <g id="XMLID_834_">
                         <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
                         c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
@@ -227,7 +226,7 @@
                     </g>
                         </svg>
                     </a>
-                    <a href="#" class="social-button instagram">
+                    <a href="https://www.instagram.com/la_moro_servicios?igsh=MTFwN2kxcTE0bnZwMw==" class="social-button instagram">
                     <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1">
                             <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
@@ -247,7 +246,7 @@
     
             <!-- Contenedor donde se mostrará el mapa -->
             <div class="card" id="map"></div>
-            
+
         </section>
 <!--         
         <section id="seccion3">
@@ -255,32 +254,12 @@
             <p>Contenido de la sección 3...</p>
         </section> -->
 
-        <footer>
+        <footer id="footer_princ" >
             <p>Copyright © 2024 LA MORO SERVICIOS Y MONTAJES</p>
             <div><p>Quieres tú presupuesto?</p><span>Escribinos</span></div>
         </footer>
 
-    </header>
-    <!-- <script>
-        // Función para inicializar el mapa
-        function initMap() {
-    // Coordenadas del lugar específico (en este caso, centenario, Neuquen)
-        var ubicacion = { lat: -38.827756577857194, lng: -68.14426897098832 };
-    
-    // Crea un nuevo mapa en el elemento con id "map"
-        var map = new google.maps.Map(document.getElementById("map"), {
-         zoom: 15, // Nivel de zoom
-          center: ubicacion // Centra el mapa en la ubicación específica
-         });
-  
-    // // // Crea un marcador en la ubicación específica
-        var marker = new google.maps.Marker({
-         position: ubicacion,
-         map: map,
-          title: "Torre Eiffel, París" // Título del marcador (opcional)
-         });
-        }
-  
-    </script> -->
+
+    <script src="scripts.js"></script>
 </body>
 </html>
